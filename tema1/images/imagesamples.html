@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image size</title>
+    <style>
+        /* CSS comment: This style sets the width of all images to 100%. The next
+        css style rule is applied to all images with no width property defined */
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Width/Height Attributes or Style?</h2>
+    <p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and
+        sets the width to 100%.</p>
+    <img src="html5.gif" alt="HTML5 Icon" width="128" height="128">
+    <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the
+        style in the head section:</p>
+    <img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+    <p>The same image from other source</p>
+    <img src="pictures/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+    <p>Animated GIF images</p>
+    <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+    <p>Image as a link</p>
+    <a href="#">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+</body>
+</html>
