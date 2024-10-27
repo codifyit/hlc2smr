@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Common hyperlinks</title>
-    </head>
-    <body>
-        <!--Root site hyperlink-->
-        <a href="#">Inicio</a>
-        <a href="mailto:rmenmar264@g.educaand.es" 
-        title="Dirección de email para solicitar más información">
-        Solicita más información</a>
-        <!-- Sending many emails -->
-        <a href="mailto:nombre@direccion.com,otro_nombre@direccion.com">
-        Solicita más información</a>
-        <!-- Add the subject to the email -->
-        <a href="mailto:nombre@direccion.com?subject=Solicitud de más información">
-        Solicita más información</a>
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Common hyperlinks</title>
+    <!-- Search engines attributes -->
+
+    <!--This attribute indicates the target audience for which 
+    the page is intended, based on language or a combination of 
+    language and geographical location.For example, specifying 
+    “English in Canada” helps search engines understand the language 
+    and region of the page, ensuring that the right users find the 
+    content in search results.-->
+    <link rel="alternate" hreflang="en-ca" href="http://example.com/english-canada" />
+
+    <!---Advertising about other tutorial in spanish -->
+    <link lang="es" xml:lang="es" title="El tutorial en español" type="text/html"
+    rel="alternate" hreflang="es" href="http://www.ejemplo.com/tutorial/espanol.html" />
+    
+    <link media="print" title="El tutorial en PDF" type="application/pdf" rel="alternate"
+    href="documento.pdf" />
+    
+    <!--favicon link-->
+    <link rel="shortcut icon" href="logox.png" type="image/jpg" />
+
+
+    <!--Style Cascade Sheets link-->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/sections.css" />
+</head>
+
+<body>
+    <!--Root site hyperlink-->
+    <a href="#">Start</a><br>
+    <a href="mailto:rmenmar264@g.educaand.es" title="Dirección de email para solicitar más información">
+        Request more information</a><br>
+    <!-- Sending many emails -->
+    <a href="mailto:nombre@direccion.com,otro_nombre@direccion.com">
+        Request more information from many emails</a><br>
+    <!-- Add the subject to the email -->
+    <a href="mailto:nombre@direccion.com?subject=Solicitud de más información">
+        Request information with subject</a><br>
+    <!-- Add text to the body of the email -->
+    <a href="mailto:nombre@direccion.com?body=Estaría interesado en solicitar
+         más información sobre sus productos">Request information with body text</a><br>
+    <!-- FTP link, don't work-->
+    <a href="ftp://localhost/hlc2smr/tema1/hyperlinks/holamundo.txt" title="Archivo comprimido de los
+        contenidos">Download contents</a><br>
+    <!--The paragraph's text should be appear with Courier font 
+        because the related style rule-->
+    <p>
+        This text must be showed with family font 'Courier'
+    </p>
+
+</body>
+
 </html>
