@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Dimensionar capas
+        Borde a todas las capas principales*/
+        /* voy a definir tantos estilos de tipo
+        identificador como identificadores hay en la actividad*/
+        div {
+            border: solid 1px green;
+        }
+
+        #contenedor {
+            /*ancho 900 px, margen auto */
+            width: 900px;
+            margin: auto;
+        }
+
+        #cabecera {
+            /*ancho 100 %. flotante derecha. borde 2px verde, relleno 0.5 em*/
+            float: right;
+            padding: 0.5em;
+        }
+
+        #identificacion {}
+
+        #busqueda {}
+
+        /*...y así todos los que faltan*/
+    </style>
+</head>
+
+<body style="background-color: #F2F5FE;">
+    <div id="contenedor">
+        <div id="cabecera">
+            <div id="identificacion">Identificación</div>
+            <div id="busqueda">Búsqueda</div>
+        </div>
+        <div id="menu">Menú</div>
+        <div id="lateralizquierdo">
+            <div>
+                <div id="noticias">Noticias</div>
+                <div id="enlaces">Enlaces</div>
+                <div id="publicidad">Publicidad</div>
+            </div>
+        </div>
+        <div id="central">Zona central</div>
+        <div id="lateralderecho">Panel derecho</div>
+        <div id="pie">Pie</div>
+    </div>
+</body>
+
+</html>
