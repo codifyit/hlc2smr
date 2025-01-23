@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Samples</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //this is an example about how to calculate if a number is pair or odd
+        let response = prompt("Give me a number, please!:");
+        //firs off all we have to check if the response variable has the value
+        //undefined or a string with 0 length
+        if(typeof(response)!=undefined || response.length>0){
+            if(response%2==0){
+                alert("You have introduced a pair number:"+response);
+            }else{
+                alert("You have introduced a odd number:"+response);
+            }
+        }else{
+            alert("Sorry, you are a bad guy, tray again!");
+        }
+    </script>
+</body>
+</html>
