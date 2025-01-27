@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let num = prompt("Input a number:");
+        if(Number.isInteger(num)){
+            num = Number(num);
+            if(num>=55 && num<=99){
+                alert("Your number is between 55 and 99");
+            }else{
+                alert("Your number isn't between 55 and 99");
+            }
+        }else{
+            alert("Not a number, please try again!");
+        }
+    </script>
+</body>
+</html>
