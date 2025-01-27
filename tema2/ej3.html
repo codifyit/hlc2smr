@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let x = prompt("Give me the first number:");
+        let y = prompt("Give me the second number:");
+        if(Number.isInteger(x) && Number.isInteger(y)){
+            x = Number(x);
+            y = Number(y);
+            if((x == 50 || y == 50) || (x + y == 50))
+            {
+                alert("True");
+            }else{
+                alert("False");
+            }
+        }else{
+            alert("Given base or height isn't a number, try again!");
+        }
+    </script>
+</body>
+</html>
