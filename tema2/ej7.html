@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let num1 = prompt("Input the first number:");
+        let num2 = prompt("Input the second number:");
+        let num3 = prompt("Input the third number:");
+        if(Number.isInteger(num1) && Number.isInteger(num2)
+        && Number.isInteger(num3)){
+            num1 = Number(num1);
+            num2 = Number(num2);
+            num3 = Number(num3);
+            if(num1>=num2 && num1>=num3){
+                alert("First number is greater or equal to the rest");
+            }else if(num2>=num1 && num2>=num3){
+                alert("Second number is greater or equal to the rest");
+            }else if(num3>=num1 && num3>=num1){
+                alert("Third number is greater or equal to the rest");
+            }
+        }else{
+            alert("Not a number given, please try again!");
+        }
+    </script>
+</body>
+</html>
