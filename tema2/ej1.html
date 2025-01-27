@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let base = prompt("Input base:");
+        let height = prompt("Input height:");
+        if(Number.isInteger(base) && Number.isInteger(height)){
+            let area = Number(base)*Number(height)/2;
+            alert("The area is:" + area);
+        }else{
+            alert("Given base or height isn't a number, try again!");
+        }
+    </script>
+</body>
+</html>
