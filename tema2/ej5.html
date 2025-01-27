@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let num = prompt("Input a positive integer number:");
+        if(Number.isInteger(num) && Number(num)>0){
+            num = Number(num);
+            if(num%3==0){
+                alert("Your number is multiple of 3");
+            }else if(num%7==0){
+                alert("Your number is multiple of 7");
+            }else{
+                alert("Your number isn't multiple of 3 or 7");
+            }
+        }
+    </script>
+</body>
+</html>
