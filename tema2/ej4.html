@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //Adrián Fernández Peñaranda 27/01/25
+        //introducir el primer número
+        let x = prompt("Introduce un número");
+        //introducir el segundo número
+        let y = prompt("Introduce otro número");
+        if (Number.isInteger(x) && Number.isInteger(y)) {
+            x = Number(x);
+            y = Number(y);
+            //el primer número es positivo y el segundo negativo
+            if (x >= 0 && y < 0) {
+                alert("El primer número es positivo y el segundo es negativo");
+            }
+            //el primer número es negativo y el segundo positivo
+            else if (x < 0 && y >= 0) {
+                alert("El primer número es negativo y el segundo es positivo");
+            }
+            //los dos números son positivos
+            else if (x >= 0 && y >= 0) {
+                alert("Los dos números son positivos");
+            }
+            //los dos números son negativos
+            else {
+                alert("Los dos números son negativos")
+            }
+        }  
+    </script>
+</body>
+
+</html>
