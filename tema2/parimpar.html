@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even and odd numbers</title>
+</head>
+<body>
+    <script type="text/javascript">
+        do{
+            //ask for a number
+            let num = prompt("Give me a number:");
+            //convert number to integer
+            num = Number(num);
+            //check the number
+            if(Number.isInteger(num)){
+                //checking if the number is even or odd
+                if(num%2==0){
+                    console.log("Even number:" + num);
+                }else{
+                    console.log("Odd number: " + num);
+                }
+            }else{
+                console.log("You haven't given me a number, try again!")
+            }
+        }while(num>-1);
+        //ending message
+        console.log("The script has finished, thanks a lot!");
+    </script>
+</body>
+</html>
