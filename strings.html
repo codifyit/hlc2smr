@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Methods</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //JavaScript String Length
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let length = text.length;
+
+        //Extracting String Characters
+        //-----------------------------------------------------
+        //JavaScript String charAt()
+        text = "HELLO WORLD";
+        let char = text.charAt(0);
+        console.log(char);
+
+        //JavaScript String charCodeAt()
+        char = text.charCodeAt(0);
+        console.log(char);
+
+        //JavaScript String at()
+        char = text.at(4);
+        console.log(char);
+
+        //Extracting String Parts
+        //-----------------------------------------------------
+        //JavaScript String slice()
+        text = "Apple, Banana, Kiwi";
+        let part = text.slice(7, 13);
+        console.log(part);
+
+        text = "Apple, Banana, Kiwi";
+        part = text.slice(7);
+        console.log(part);
+
+        text = "Apple, Banana, Kiwi";
+        part = text.slice(-12);
+        console.log(part);
+
+        text = "Apple, Banana, Kiwi";
+        part = text.slice(-12);
+        console.log(part);
+
+        //JavaScript String substring()
+        let str = "Apple, Banana, Kiwi";
+        part = str.substring(7, 13);
+        console.log(part);
+
+        str = "Apple, Banana, Kiwi";
+        part = str.substr(7, 6);
+        console.log(part);
+
+        str = "Apple, Banana, Kiwi";
+        part = str.substr(-4);
+        console.log(part);
+
+        //JavaScript String concat()
+        text = "Hello" + " " + "World!";
+        text = "Hello".concat(" ", "World!");
+        console.log(text);
+
+        //JavaScript String trim(), trimStart(), trimeEnd()
+        text1 = "      Hello World!      ";
+        let text2 = text1.trim();
+        console.log(text2);
+
+        text1 = "     Hello World!     ";
+        text2 = text1.trimStart();
+        console.log(text2);
+
+        text1 = "     Hello World!     ";
+        text2 = text1.trimEnd();
+        console.log(text2);
+
+        //JavaScript String padStart(), padEnd()
+        text = "5";
+        let padded = text.padStart(4,"0");
+        console.log(padded);
+
+        padded = text.padEnd(4,"0");
+        console.log(padded);
+
+        //JavaScript String repeat(), not allowed in IE
+        text = "Hello world!";
+        let result = text.repeat(4);
+        console.log(result);
+
+        //Replacing String Content (case sensitive)
+        //-----------------------------------------------------------------------
+        //JavaScript String replace()
+        text = "Please visit Microsoft!";
+        let newText = text.replace("Microsoft", "W3Schools");
+        console.log(newText);
+
+        //JavaScript String replaceAll()
+        text.replaceAll("Cats","Dogs");
+        text = text.replaceAll("cats","dogs");
+        console.log(text);
+    </script>
+</body>
+</html>
