@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Ex. 1 Solution</title>
+</head>
+<body>
+    <div id="consola"></div>
+    <script type="text/javascript">
+        //variable to save the message with the results
+        let message="";
+        for(let i=0;i<11;i++){
+            if(i%2==0){
+                message+=i+ " is even<br>";
+            }else{
+                message+=i+ " is odd<br>";
+            }
+        }
+        //put the results into the div with id=consola 
+        document.getElementById("consola").innerHTML=message;
+    </script>
+</body>
+</html>
