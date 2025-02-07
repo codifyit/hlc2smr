@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Ex. 3 Solution</title>
+</head>
+<body>
+    <div id="consola"></div>
+    <script type="text/javascript">
+        //variable to save the result message
+        let message="";
+        //varible to save the given number
+        let number = prompt("Introduce un número entre 1 y 30:");
+        //variable to save the divisorsof the given number
+        let sum=1;
+        //In order to simplificate the solution 
+        //the given number won't checked
+        for(let i=2;i<number;i++){
+            if(number%i==0){
+                sum+=i;
+            }
+        }
+        if(sum==number)
+        {
+            message="El número " + number + " es perfecto!";
+        }else{
+            message="El número " + number + " no es perfecto :(";
+        }
+        document.getElementById("consola").innerHTML=message;
+    </script>
+</body>
+</html>
