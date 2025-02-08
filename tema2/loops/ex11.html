@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Ex. 11 Solution</title>
+</head>
+
+<body>
+    <div id="consola"></div>
+    <script type="text/javascript">
+        /*
+        Write a Javascript program that, given a positive integer, asks the user to guess it. 
+        The user will have 3 attempts, for each attempt it will be indicated whether the number 
+        entered by the user is greater or less than the number they have to guess. 
+        The number to be guessed is assigned to a variable before starting the game.
+        */
+        //variable to save the number to guess
+        let magic = 5;
+        //variable to save the given number
+        let number;
+        //variable to save the try
+        let tryCounter=0;
+        //variable to save the message
+        let message = "";
+        do{
+            number = prompt(message + "Give me a number:");
+            //simplification: the user is a good person!
+            number = Number(number);
+            if(number>magic){
+                message="Less than " + number + ". ";
+            }else{
+                message="Greater than " + number + ". ";
+            }
+            tryCounter++;
+        }while(magic!=number && tryCounter<3);
+        if(magic==number){
+            document.getElementById("consola").innerHTML+="<br>Congratulations!!! You have guessed the number after " +
+            tryCounter + " attemps";
+        }else{
+            document.getElementById("consola").innerHTML+="<br>Sorry, you haven't guessed the number, try again!";
+        }
+    </script>
+</body>
+
+</html>
