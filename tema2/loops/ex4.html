@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Ex. 4 Solution</title>
+</head>
+<body>
+    <div id="consola"></div>
+    <script type="text/javascript">
+        /*
+        Write a JavaScript program to construct the following pattern, using a nested for loop.
+            *  
+            * *  
+            * * *  
+            * * * *  
+            * * * * *  
+        */
+       //variable to save the result message
+       let message = "";
+       for(let i=0;i<5;i++){
+        for(let j=0;j<i+1;j++){
+            message+="*";
+        }
+        //add a new line
+        message+="<br>";
+       }
+       document.getElementById("consola").innerHTML=message;
+    </script>
+</body>
+</html>
