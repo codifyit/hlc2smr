@@ -118,7 +118,7 @@ function create ()
 
     bombs = this.physics.add.group();
 
-    //  The score, write your code here
+    //initialize the score variables, write your code here
 
     //  Collide the player and the stars with the platforms
     this.physics.add.collider(player, platforms);
@@ -164,7 +164,7 @@ function collectStar (player, star)
 {
     star.disableBody(true, true);
 
-    //  Add and update the score, write your code here
+    //update the score variables, write your code here
 
     if (stars.countActive(true) === 0)
     {
@@ -194,7 +194,7 @@ function hitBomb (player, bomb)
 
     player.anims.play('turn');
 
-    //check if dude lifes are 0, then game over. Write your code here
+    //check if dude lifes are 0, then game over else game go on. Write your code here
 }
 
 </script>
