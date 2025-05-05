@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater than 13</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+        13. Get the difference between a given number and 13,  
+        if the number is greater than 13 return double the absolute difference. 
+        Show the results and if the difference is negative show 'Negative Difference'
+        */
+
+        //declare the variable to save the given number
+        let num = Number(prompt("Give me a number:"));
+        //check if the given number is greater or equal than 13
+        if(num>=13){
+            alert(Math.abs(num-13) + " Positive or zero difference");
+        }else{
+            alert(Math.abs(num-13) + " Negative difference");
+        }
+    </script>
+</body>
+</html>
