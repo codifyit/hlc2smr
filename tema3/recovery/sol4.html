@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle based on *</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //declare an acumulative variable to save the *
+        let triangle = "";
+        for(let i=0;i<5;i++){
+            for(let j=0;j<5;j++){
+                //check if the row is 0 or if the index of column 
+                //is greater or equal to row index
+                if(i==0 || j>=i){
+                    triangle+="*";
+                }else{
+                    triangle+=" ";
+                }
+            }
+            triangle+="\n";
+        }
+        //show the result
+        console.log(triangle);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater than 10</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+        11. Evaluates three given integers to determine 
+        if any one of them is greater than or equal to 10 
+        and less than at least one of the other two. Show the results.
+        */
+
+        //get the numbers using prompt function
+        let num1 = Number(prompt("Enter the first number:"));
+        let num2 = Number(prompt("Enter the second number:"));
+        let num3 = Number(prompt("Enter the third number:"));
+
+        if(num1>=10 && (num1<=num2 || num1<=num3)){
+            alert("Number " + num1 + " is greater or equal than 10" +
+                " and less or equal than " + num2 + " or " + num3);
+        }else if(num2>=10 && (num2<=num1 || num2<=num3)){
+            alert("Number " + num2 + " is greater or equal than 10" +
+                " and less or equal than " + num1 + " or " + num3);
+        }else  if(num3>=10 && (num3<=num2 || num3<=num1)){
+            alert("Number " + num3 + " is greater or equal than 10" +
+                " and less or equal than " + num1 + " or " + num2);
+        }else{
+            alert("There is no number for the defined rules");
+        }
+    </script>
+</body>
+</html>
